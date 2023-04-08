@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Dashboard</title>
+    <link rel="stylesheet" href="../css/style/styleCSS.css">
+    <link rel="stylesheet" href="../css/adminEmployeeDash.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sub-container mx-5 my-5">
+            <div class="d-flex justify-content-between">
+                <div class="logo">
+                    <img src="../css/style/upholsteryLogo.png" width="120" alt="Logo of Upholstery">
+                </div>
+                <div class="mt-5">
+                    <button type="button" class="btn">Logout</button>
+                    <button type="button" class="btn">Setting</button>
+                </div>
+            </div>
+            <div class="contentContainer p-1">
+                <div class="bg-info m-5 py-2 d-flex justify-content-evenly">
+                    <div class="Employee">
+                        <a href="adminEmployeeDashboard.html" class="nav-link">Employee</a>
+                    </div>
+                    <div class="Customer">
+                        <a href="adminCustomerDashboard.html" class="nav-link">Customer<sup class="text-danger">0</sup></a>
+                    </div>
+                    <div class="Supply">
+                        <a href="adminSupplyDashboard.html" class="nav-link text-primary">Supply</a>
+                    </div>
+                    <div class="Reports">
+                        <a href="adminReportsDashboard.html" class="nav-link">Reports<sup class="text-danger">0</sup></a>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-between mx-5">
+                    <div class="col-3">
+                        <div class="input-group input-group-sm rounded-2">
+                            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#addSupply">Add Supply</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="input-group input-group-sm rounded-2">
+                            <input type="search" class="form-control" name="search" id="search" placeholder="Search">
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-12 px-5 mt-3 mb-5">
+                    <div class="scrollableTable">
+                        <table class="table text-center">
+                            <thead class="py-5 bg-info">
+                                <tr class="fw-light sticky-top" style="border: 1px solid black;">
+                                    <th>No.</th>
+                                    <th>Supply Name</th>
+                                    <th>Update</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody id="SupplyTable">
+                                <tr>
+                                    <td>Example</td>
+                                    <td>Example</td>
+                                    <td><button class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#updateSupply">Update</button></td>
+                                    <td><button class="btn btn-danger btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#deleteSupply">Delete</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../css/style/styleJS.js"></script>
+</html>

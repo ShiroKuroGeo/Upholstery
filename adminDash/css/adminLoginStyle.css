@@ -1,0 +1,32 @@
+.tableForm{
+    width: 580px;
+    height: 351px;
+}
+
+.tableContent{
+    background-color: #DBF6DB;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #005ce6;
+    outline: 0;
+    box-shadow: none;
+}
+
+.loginInput{
+    flex-direction: column;
+}
+
+input{
+    width: 20%;
+}
+
+p{
+    font-size: 12px;
+}
+
+label{
+    font-size: 10px;
+}
