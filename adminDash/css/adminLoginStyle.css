@@ -1,16 +1,18 @@
 .tableForm{
-    width: 580px;
+    width: 620px;
     height: 351px;
 }
 
 .tableContent{
     background-color: #DBF6DB;
 }
-
+.form-control{
+    border: 1px solid rgb(4, 89, 95);
+}
 .form-control:focus {
     color: #212529;
     background-color: #fff;
-    border-color: #005ce6;
+    border-color: #00929c;
     outline: 0;
     box-shadow: none;
 }
@@ -24,7 +26,7 @@ input{
 }
 
 p{
-    font-size: 12px;
+    font-size: 13px;
 }
 
 label{
